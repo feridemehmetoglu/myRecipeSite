@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  ingredient: MyText
+  description: MyText
+  date: 2016-04-06 13:24:40
+  read_count: 1
+  confirmation: false
+  user_id: 
+
+two:
+  title: MyString
+  ingredient: MyText
+  description: MyText
+  date: 2016-04-06 13:24:40
+  read_count: 1
+  confirmation: false
+  user_id: 

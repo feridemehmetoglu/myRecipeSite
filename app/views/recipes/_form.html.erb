@@ -1,0 +1,63 @@
+<% if @recipe.errors.any? %>
+<div class="">
+	<b>Form gönderilirken <%= @recipe.errors.count %> hata ile karşılaşıldı:</b>
+	<ul>
+		<% @recipe.errors.each do |attr,msg| %>
+		<li><%= msg %></li>
+		<% end %>
+	</ul>
+</div>
+<% end %>
+
+<div class="row">
+	<div class="col-md-6">
+		<section class="panel">
+			<%= form_for @recipe do |f|  %>
+			<header class="panel-heading">Tarif Ekle</header>
+			<div class="panel-body">
+				<div class="col-sm-12">
+					<div class="form-group">
+						<label class="control-label">Tarif Adı:</label>
+						<%= f.text_field :title, class: "form-control" %>
+					</div>
+				</div>
+
+				<div class="col-sm-12">
+					<div class="form-group">
+						<label class="control-label">Malzemeler:</label>
+						<%= f.text_field :ingredient, class: "form-control" %>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="form-group">
+						<label class="control-label">Yapılışı:</label>
+						<%= f.text_area :description, class: "form-control" %>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="form-group">
+						<label class="control-label">Tarif Adı:</label>
+						<%= f.text_field :title, class: "form-control" %>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="form-group">
+						<label class="control-label">Tarif Adı:</label>
+						<%= f.text_field :title, class: "form-control" %>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="form-group">
+						<label class="control-label">Tarif Adı:</label>
+						<%= f.text_field :title, class: "form-control" %>
+					</div>
+				</div>
+			</div>
+
+			<% end %>
+
+		</section>
+	</div>
+</div>
+
+
